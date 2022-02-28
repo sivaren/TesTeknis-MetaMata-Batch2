@@ -1,0 +1,19 @@
+.resep-image {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_960_720.jpg")
+}
+
+.resep-detail {
+    margin-top: 10px;
+}
+
+.resep-detail ul {
+    padding: 0;
+    list-style-type: none;
+}

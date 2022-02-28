@@ -1,0 +1,37 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: var(--mainBlue);
+}
+
+.nav-brand {
+    margin-left: 100px;
+}
+
+.nav-brand-item {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-brand-item:hover {
+    color: white;
+}
+
+.nav{
+    margin-right: 50px;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: black;
+}

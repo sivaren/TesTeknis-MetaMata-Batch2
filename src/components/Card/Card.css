@@ -1,0 +1,45 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 400px;
+    margin: 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card-image {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/pict1.jpg")
+}
+
+.likes-count p{
+    margin-bottom: 0;
+    color: var(--mainGrey);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h5{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: var(--mainBlue)
+}
+
+.card-btn {
+    font-weight: 600;
+    height: 50px;
+    margin-top: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--mainGrey);
+}

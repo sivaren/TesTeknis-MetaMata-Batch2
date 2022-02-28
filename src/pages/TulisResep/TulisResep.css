@@ -1,0 +1,33 @@
+.header {
+    margin-bottom: 20px;
+    color: var(--mainBlue);
+}
+
+.static-form {
+    margin-bottom: 0;
+}
+
+.dynamic-form {
+    margin-bottom: 15px;
+}
+
+.dynamic-form h5 {
+    color: var(--mainBlue);
+}
+
+.dynamic-form p {
+    margin:0;
+    cursor: pointer;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--mainBlue);
+}
