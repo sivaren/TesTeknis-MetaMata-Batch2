@@ -1,5 +1,4 @@
 # TesTeknis-MetaMata-Batch2
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Table of Contents
 * [General Information](#general-information)
@@ -19,18 +18,47 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 $ git clone https://github.com/sivaren/TesTeknis-MetaMata-Batch2
 ```
 
+> **Buat database baru dengan nama `laravel`** </br>
+
+Pada folder `backend` buat file baru `.env` dengan isi sama seperti `.env.example` akan tetapi pada bagian database diganti sebagai berikut
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD={ YOUR PASSWORD }
+```
+
 ## Run Program
 > **To setup this project run** </br>
 
 **Open `cmd` on this folder**
 
-First, make sure all dependencies have been installed
+**Set up backend**
+Arahkan path ke folder `backend`
 ```
-npm install
+cd backend
 ```
 
-Then, run the development server
+Kemudian jalankan command sebagai berikut
 ```
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
+
+Open [http://127.0.0.1:8000/api/resep](http://127.0.0.1:8000/api/resep) with your browser to see the result.
+
+**Set up frontend**
+Arahkan path kembali ke parent, lalu arahkan pada folder `frontend`
+```
+cd..
+cd frontend
+```
+Kemudian jalankan command sebagai berikut
+```
+npm install
 npm start
 ```
 
