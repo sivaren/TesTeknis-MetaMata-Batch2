@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
 
 import Card from '../../components/Card/Card';
-import resep from '../../utils/resep';
 
 import './Home.css';
 
 export default function Home () {
-    const [recipes, setRecipes] = useState(resep);
+    const [recipes, setRecipes] = useState([]);
 
     useEffect(function () {
+        async function getRecipes () {
+            const request = await fetch('http://127.0.0.1:8000/api/resep');
+            const response = await request.json();
+            
+            setRecipes(response);
+        }
+
+        getRecipes();
         document.title='Home';
     }, []);
 
