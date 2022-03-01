@@ -36,6 +36,7 @@ DB_PASSWORD={ YOUR PASSWORD }
 **Open `cmd` on this folder**
 
 **Set up backend**
+
 Arahkan path ke folder `backend`
 ```
 cd backend
@@ -51,6 +52,7 @@ php artisan serve
 Open [http://127.0.0.1:8000/api/resep](http://127.0.0.1:8000/api/resep) with your browser to see the result.
 
 **Set up frontend**
+
 Arahkan path kembali ke parent, lalu arahkan pada folder `frontend`
 ```
 cd..
