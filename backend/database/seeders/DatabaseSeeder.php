@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {   
-
+        // Insert to resep table
         DB::table('resep')->insert([
             'foto' => 'https://cdn.pixabay.com/photo/2020/02/02/15/07/meat-4813261_960_720.jpg',
             'suka' => 5,
@@ -47,10 +47,12 @@ class DatabaseSeeder extends Seeder
             'deskripsi' => 'Ayam paling enak di warung W.CO Cisitu Lama'
         ]);
 
+        // Insert to bahan table
         DB::table('bahan')->insert([
             'nama' => 'Telor',
             'resep_id' => 1
         ]);
+        // Insert to cara_buat table
         DB::table('cara_buat')->insert([
             'langkah' => 'Pecahkan telor',
             'resep_id' => 1

@@ -4,6 +4,7 @@ export default function Card ({resep, recipes, plusLike}) {
     function likeHandler (id) {
         const tempRecipes = [...recipes];
         tempRecipes[id].suka++;
+
         plusLike(tempRecipes);
     }    
 
@@ -15,7 +16,7 @@ export default function Card ({resep, recipes, plusLike}) {
                 <h5>{resep.nama}</h5>
                 <p>{resep.deskripsi}</p>
             </div>
-            <button className="card-btn" onClick={() => {likeHandler(resep.id-1)}}>Suka</button>
+            <button className="card-btn" onClick={() => { likeHandler(resep.id-1) }}>Suka</button>
         </div>
     );
 }
