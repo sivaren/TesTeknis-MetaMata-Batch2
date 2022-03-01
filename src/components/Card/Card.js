@@ -1,16 +1,22 @@
-import './Card.css'
+import './Card.css';
 
-export default function Card () {
+export default function Card ({resep, recipes, plusLike}) {
+    function likeButton (id) {
+        const tempRecipes = [...recipes];
+        tempRecipes[id].likes++;
+        plusLike(tempRecipes);
+    }    
+
     return (
         <div className="card-container">
-            <div className="card-image"></div>
+            <img className="card-image" src={resep.image} alt={resep.title}></img>
             <div className="card-text">
-                <div className="likes-count"><p>2 Orang Menyukai ini</p></div>
-                <h5>Sambal jamur ala SS</h5>
-                <p>lorem ipsum lorem ipsum lorem</p>
+                <div className="likes-count"><p>{resep.likes} Orang Menyukai ini</p></div>
+                <h5>{resep.title}</h5>
+                <p>{resep.desc}</p>
             </div>
 
-            <button className="card-btn">Suka</button>
+            <button className="card-btn" onClick={() => {likeButton(resep.id)}}>Suka</button>
         </div>
     );
 }

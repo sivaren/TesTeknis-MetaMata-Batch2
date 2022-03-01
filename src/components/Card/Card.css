@@ -16,7 +16,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../../assets/pict1.jpg")
 }
 
 .likes-count p{
@@ -42,4 +41,10 @@
     border: none;
     border-radius: 8px;
     background-color: var(--mainGrey);
+    transition: 0.2s;
+}
+
+.card-btn:hover {
+    color: white;
+    background-color: var(--mainBlue);
 }
