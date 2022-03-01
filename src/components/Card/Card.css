@@ -13,12 +13,10 @@
     height: 200px;
     margin-bottom: 8px;
     border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
-.likes-count p{
+.likes-count p {
     margin-bottom: 0;
     color: var(--mainGrey);
 }
@@ -28,7 +26,7 @@
     flex-direction: column;
 }
 
-.card-text h5{
+.card-text h5 {
     margin-top: 3px;
     margin-bottom: 3px;
     color: var(--mainBlue)

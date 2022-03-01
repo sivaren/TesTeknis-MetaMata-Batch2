@@ -13,17 +13,15 @@ export default function Home () {
     }, []);
 
     return (
-        <>
-            <div className="page-container">
-                <h4>Resep Terbaru</h4>
-                <div className="recipes">
-                    {recipes.map((item,idx) => {
-                        return (
-                            <Card key={idx} resep={item} recipes={recipes} plusLike={setRecipes} />
-                        );
-                    })}
-                </div>
+        <div className="page-container">
+            <h4>Resep Terbaru</h4>
+            <div className="recipes">
+                {recipes.map((item,idx) => {
+                    return (
+                        <Card key={idx} resep={item} recipes={recipes} plusLike={setRecipes} />
+                    );
+                })}
             </div>
-        </>
+        </div>
     );
 }

@@ -9,13 +9,12 @@ export default function Card ({resep, recipes, plusLike}) {
 
     return (
         <div className="card-container">
-            <img className="card-image" src={resep.image} alt={resep.title}></img>
+            <img className="card-image" src={resep.image} alt={resep.title} />
             <div className="card-text">
                 <div className="likes-count"><p>{resep.likes} Orang Menyukai ini</p></div>
                 <h5>{resep.title}</h5>
                 <p>{resep.desc}</p>
             </div>
-
             <button className="card-btn" onClick={() => {likeButton(resep.id)}}>Suka</button>
         </div>
     );
